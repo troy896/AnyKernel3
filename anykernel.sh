@@ -14,7 +14,7 @@ device.name1=caiman
 device.name2=komodo
 device.name3=tokay
 device.name4=comet
-supported.versions=16
+supported.versions=17
 supported.patchlevels=
 '; } # end properties
 
@@ -25,7 +25,8 @@ is_slot_device=1;
 split_boot;
 flash_boot;
 
-rm -f "$AKHOME/Image.lz4"
+rm -f "$AKHOME/Image.lz4";
+rm -f "$home/Image.lz4";
 
 # vendor_kernel_boot installation (for dtb)
 block=vendor_kernel_boot;
